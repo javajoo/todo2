@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- css 파일 경로 -->
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+</head>
+<body>
+    <H1>상품 등록하기</H1>
+
+    <form method="post">
+        <div>상품ID</div>
+        <span></span>
+        <input type="text" id="goodsId" name="goodsId" class="form-control" placeholder="상품ID를 입력하세요"><br>
+
+        <div>상품명</div>
+        <input type="text" id="goodsName" name="goodsName" class="form-control" placeholder="상품명을 입력하세요"><br>
+
+        <div>가격</div>
+        <input type="text" id="goodsPrice" name="goodsPrice" class="form-control" placeholder="가격을 입력하세요"><br>
+
+        <div>수량</div>
+        <input type="text" id="goodsCount" name="goodsCount" class="form-control" placeholder="수량을 입력하세요">
+
+        <br><br>
+        <button type="submit" class="btn insert-btn btn-success">상품 등록</button>
+    </form>
+</body>
+</html>

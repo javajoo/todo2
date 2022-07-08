@@ -1,0 +1,21 @@
+
+a:hover {
+    text-decoration: none;
+}
+
+table, th, td {
+    border: 1px solid #bcbcbc;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+}
+
+tr:hover {
+    background-color: beige ;
+}
